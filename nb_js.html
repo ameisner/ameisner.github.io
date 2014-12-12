@@ -2177,7 +2177,7 @@ var words = ["000", "007", "039", "04", "06", "07", "08", "09", "10", "100", "10
         ppos = ppos/ptot;
         pneg = pneg/ptot;
 
-        var output_string = "P(positive|review text) = ";
+        var output_string = "P(positive | review text) = ";
         var prob_string = String(ppos);
         output_string = output_string.concat(prob_string);
         document.getElementById("calc").innerHTML = output_string;
