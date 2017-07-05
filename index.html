@@ -1,251 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Aaron Meisner</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<style type="text/css">
-.item{
-    background: #333;    
-    text-align: center;
-    height: 418px !important;
-}
-.carousel{
-    margin-top: 20px;
-}
-.bs-example{
-    margin: 0px;
-}
-.wbg1{
-    background: url(assets/slide1.png);
-    background-size: 100% 100%;
-}
-.wbg2{
-    background: url(assets/slide2.png);
-    background-size: 100% 100%;
-}
-.wbg3{
-    background: url(assets/slide3.png);
-    background-size: 100% 100%;
-}
-.bio{
-    background-color: #EEEEEE;
-}
-.bottom1{
-    margin-bottom: 0.5cm;
-    margin-top: 0.9cm;
-}
-.bottom2{
-    margin-bottom: -0.75cm;
-    margin-top: 1.40cm;
-    background-color: #F9F9F9;
-}
-.center{
-    text-align: center;
-}
-.top1{
-    margin-top: 1.2cm;
-    text-align: center;
-}
-.pbg{
-    background: url(assets/planckbg.png);
-    background-size: 100% 100%;
-}
-.wisebg{
-    background: url(assets/wisebg.png);
-    background-size: 100% 100%;
-}
-.planckpad{
-    margin-top: 1.5cm;
-    margin-bottom: 2.5cm;
-}
-.btnbbrdr{
-    border-color: #000000;
-}
-</style>
-<SCRIPT LANGUAGE="JavaScript">
+<!DOCTYPE HTML>
 <!--
-
-slide1 = new Image(1800,619)
-slide1.src = "slide1.png"
-
-prof = new Image(217,234)
-prof.src = "aaron.jpg"
-
-wisebg = new Image(1800,758)
-wisebg.src = "wisebg.png"
-
-planckbg = new Image(900,320)
-planckbg.src = "planckbg.png"
-
-slide2 = new Image(1800,642)
-slide2.src = "slide2.png"
-
-slide3 = new Image(1800,619)
-slide3.src = "slide3.png"
-
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-</SCRIPT>
-</head>
+<html>
+	<head>
+		<title>Aaron Meisner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-<script>
-function gen_mail_to_link() {
-    var pref = "mailto:"
-    var rhs = "berkeley.edu"
-    var lhs = "ameisner"
-    var addr = pref.concat(lhs, "@", rhs);
-    document.getElementById("mailto").href = addr;
-}
-</script>
+		<!-- Header -->
+			<div id="header">
 
-<body onload="gen_mail_to_link()">
+				<div class="top">
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Aaron Meisner</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#wise">WISE Dust Map</a></li>
-            <li><a href="#planck">Planck Dust Model</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Aaron Meisner</h1>
+							<p>Astronomer</p>
+                                                        <p>UC Berkeley & LBNL</p>
+						</div>
 
-<div class="container-fluid bottom2">
-       <p align="right"> <font size=2><a href="http://arxiv.org/abs/1312.0947" target="_blank">image credit: Meisner & Finkbeiner (2014), ApJ, 781, 5 </a></font> </p>
-</div>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-<div class="bs-example">
-    <div id="wiseCarousel" class="carousel slide" data-interval="4000" data-ride="carousel">
-    	<!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#wiseCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#wiseCarousel" data-slide-to="1"></li>
-            <li data-target="#wiseCarousel" data-slide-to="2"></li>
-        </ol>   
-       <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="active item wbg1">
-                <div class="carousel-caption">
-                  <h3><i>mapping interstellar dust</i></h3>
-                </div>
-            </div>
-            <div class="item wbg2">
-                <div class="carousel-caption">
-                  <h3><i>at high resolution</i></h3>
-                </div>
-            </div>
-            <div class="item wbg3">
-                <div class="carousel-caption">
-                  <h3><i>over the entire sky</i></h3>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#wiseCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#wiseCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-</div>
+								Prologue's nav expects links in one of two formats:
 
-<div class="container-fluid bio" id="about">
-    <div class="container bottom1">
-    </div>
-</div>
+								1. Hash link (scrolls to a different section within the page)
 
-<div class="container-fluid bio">
-    <div class="container">
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive img-circle center-block" width=300px src="assets/aaron.jpg" alt="Aaron Meisner">
-        </div>
-        <div class="col-md-7 top1">
-            <h1>Aaron Meisner</h1>
-            <p class="lead">Cosmology Data Science Fellow @ UC Berkeley
-            </p>
-            <p>
-                I study cosmological foregrounds by creating and analyzing <br> full-sky, high-resolution 
-maps of interstellar dust.
-            </p>
-            <a class="btn btn-primary btnbbrdr" role="button" href="assets/cv.pdf">Curriculum Vitae</a> <br>
-            <table border="0" style="width:15%" align="center">
-                <tr>
-                    <td align="center"> <a href="" id="mailto"><i class="fa fa-envelope-o fa-3x"></i></a></td>
-                    <td align="center"> <a href="https://github.com/ameisner"><i class="fa fa-github fa-3x"></i></a> </td>
-                </tr>
-            </table> 
-        </div>
-    </div>
-</div>
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-<div class="container-fluid bio" id="wise">
-    <div class="container bottom1">
-    </div>
-</div>
+								2. Standard link (sends the user to another page/site)
 
-<div class="wisebg">
-<div class="container-fluid">
-    <div class="container planckpad">
-        <div class="col-md-6">
-            <div class="center">
-                <h1><font color="white">WISE 12 micron Dust Map</font></h1>
-                <p class="lead">
-                    <font color="white">A full-sky, high-resolution atlas of Galactic<br>12 micron dust emission.</font>
-                </p>
-                <p>
-                    <font color="white">We have completed a custom reprocessing of the entire <br> <a href="http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/">WISE</a> 
-                                        12 micron imaging data set to isolate Galactic dust emission. <br> By performing hundreds of millions of point source subtractions
-                                        <br> and preserving large angular scale modes, we have derived a <br>full-sky, 15 arcsecond resolution map of interstellar dust. </font>
-                </p>
-                <a class="btn btn-primary" href="http://wise.skymaps.info" target="_blank" role="button">Visit the data release website!</a>
-            </div>
-        </div>
-        <div class="col-md-6">
-        </div>
-    </div>
-</div>
-</div>
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
-<div class="pbg">
-<div class="container-fluid" id="planck">
-    <div class="container planckpad">
-        <div class="col-md-8">
-        </div>
-        <div class="col-md-4">
-            <div class="center">
-                <h1><font color="black">Planck Dust Model</font></h1>
-                <p class="lead">
-                    <font color="black">A&nbsp;full-sky,&nbsp;Planck-based&nbsp;thermal&nbsp;dust<br>emission model.</font>
-                </p>
-                <p>
-                    <font color="black">By fitting a dust spectrum consisting of two modified <br> blackbodies to 
-                                       <a href="http://wiki.cosmos.esa.int/planckpla/index.php/Main_Page">Planck</a>, IRAS and DIRBE data, <br> we have
-                                       created the first ever Planck-based <br> 
-                                       100-3000 GHz thermal dust emission model.</font>
-                </p>
-                <a class="btn btn-primary btnbbrdr" href="http://planck.skymaps.info" target="_blank" role="button">Visit the data release website!</a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="#research" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-line-chart">Research</span></a></li>
+								<li><a href="#press" id="press-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Press</span></a></li>
+                                                                <li><a href="#outreach" id="outreach-link" class="skel-layers-ignoreHref"><span class="icon fa-bullhorn">Outreach</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
 
-</body>
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://github.com/ameisner" class="icon fa-github"><span class="label">Github</span></a></li>
+							<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+							<li><a href="mailto:ameisner@lbl.gov" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt" style="font-weight:bold"><font color="white">Mapping the Universe</font><br><font color="white">In Search of Nearby Worlds</font></h2>
+								<!-- <p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p> -->
+							</header>
+
+							<footer>
+								<a href="assets/cv.pdf" class="button scrolly">CV</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Research -->
+					<section id="research" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Research</h2>
+							</header>
+
+							<p>I specialize in making and analyzing full-sky, high-resolution maps from large astronomical imaging data sets. 
+                                                           Much of my work focuses on processing infrared images from NASA's 
+                                                           <a href="https://www.nasa.gov/mission_pages/neowise/main/index.html">NEOWISE</a> mission, repurposing this vast asteroid-hunting data set for astrophysics
+                                                           beyond the main belt. I am using NEOWISE data to search for cold nearby worlds, such as the hypothesized 
+                                                           <a href="http://www.findplanetnine.com">Planet Nine</a>, <a href="https://en.wikipedia.org/wiki/Tyche_(hypothetical_planet)">Planet X</a>, and
+                                                           other elusive neighbors to the Sun which may be impossible to find at visible wavelengths. </p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="https://arxiv.org/abs/1611.00015" class="image fit"><img src="images/p9.gif" alt="" /></a>
+										<header>
+											<font size="5">WISE Planet Nine Search</font>
+                                                                                        <h3>I have performed the deepest and widest area WISE-based search 
+                                                                                            for Planet Nine.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://arxiv.org/abs/1705.02919" class="image fit"><img src="images/bw.jpg" alt="" /></a>
+										<header>
+											<font size="5">Backyward Worlds: Planet 9</font>
+                                                                                        <h3>I co-founded this citizen science motion search, built around my WISE coadds.</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="http://legacysurvey.org/viewer?ra=269.8380&dec=66.6399&zoom=9&layer=unwise-neo2" class="image fit"><img src="images/wise_coadds_website.jpg" alt="" /></a>
+										<header>
+											<font size="5">WISE Coadds</font>
+                                                                                        <h3>I have reprocessed 140 terabytes of WISE images to create the deepest
+                                                                                            ever full-sky maps at 3-5 microns.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a class="image fit"><img src="images/bobs_star.gif" alt="" /></a>
+										<header>
+											<font size="5">CatWISE</font>
+                                                                                        <h3>A W1/W2 successor to AllWISE based on my WISE coadds.</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="http://legacysurvey.org" class="image fit"><img src="images/ctio_picture_cropped.jpg" alt="" /></a>
+										<header>
+											<font size="5">DESI Imaging Surveys</font>
+                                                                                        <h3>I'm a core member fo the DESI imaging surveys team, creating optical catalogs 1.5-2 mags 
+                                                                                        deeper than SDSS over 14,000 square degrees of sky.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="http://wise.skymaps.info" class="image fit"><img src="images/t116_clean.jpg" alt="" /></a>
+										<header>
+											<font size="5">WISE Dust Map</font>
+                                                                                        <h3>I created a full-sky, high-resolution map of mid-infrared dust emission.</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Press -->
+					<section id="press" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Press</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/p9_rando.jpg" alt="" /></a>
+
+							<p> My work, particularly in relation to Planet Nine, has been widely featured in local, national
+                                                            and international media. A partial list of articles quoting or mentioning me by name is provided below. I was
+                                                            was also interviewed for a <a href="https://vimeo.com/205176870">TV segment</a> on San Francisco's KPIX5 (CBS), and radio segments on Bay Area
+                                                            stations KGO and KCBS.</p>
+
+						</div>
+                                                <font size="5"><b>Berkeley News</b> </font><font size="4">: <a href="http://news.berkeley.edu/2017/02/15/uc-berkeley-nasa-looking-for-citizen-scientists-to-help-find-planet-9">
+                                                UC Berkeley, NASA looking for citizen scientists to help find Planet 9</a></font> <br>
+                                                <font size="5"><b>nasa.gov</b> </font><font size="4">: <a href="https://www.nasa.gov/feature/goddard/2017/nasa-funded-website-lets-public-search-for-new-nearby-worlds">
+                                                NASA-funded Website Lets Public Search for New Nearby Worlds</a></font> <br>
+                                                <font size="5"><b>Berkeley Lab</b> </font><font size="4">: <a href="http://newscenter.lbl.gov/2017/03/08/find-planet-nine-citizen-science-space-project">
+                                                Attention Earthlings: Help Wanted in Finding a New Planet</a></font> <br>
+                                                <font size="5"><b>USA Today</b> </font><font size="4">: <a href="https://www.usatoday.com/story/tech/sciencefair/2017/02/16/planet-9-nasa/98007144">
+                                                NASA wants you - to find a missing planet</a></font> <br>
+                                                <font size="5"><b>New York Post</b> </font><font size="4">: <a href="http://nypost.com/2017/02/16/nasa-would-like-you-to-please-find-this-planet">
+                                                NASA would like you to please find this planet</a></font> <br>
+                                                <font size="5"><b>Daily Mail</b> </font><font size="4">: <a href="http://www.dailymail.co.uk/sciencetech/article-4229140/NASA-launches-website-armchair-astronomers.html">
+                                                Can YOU spot Planet 9?</a></font> <br>
+                                                <font size="5"><b>Die Welt</b> </font><font size="4">: <a href="https://www.welt.de/wissenschaft/article162119209/Jeder-soll-bei-der-Jagd-auf-Planet-Neun-mithelfen.html">
+                                                Jeder soll bei der Jagd auf Planet Neun mithelfen</a></font> <br>
+                                                <!-- add daily cal article ?? -->
+					</section>
+
+				<!-- Outreach -->
+					<section id="outreach" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Outreach</h2>
+							</header>
+
+							<p>I co-founded <a href="http://backyardworlds.org">Backyard Worlds: Planet 9</a>, a <a href="https://www.zooniverse.org/">Zooniverse</a> project
+                                                           consisting of an all-sky crowdsourced motion search built around my time-resolved WISE/NEOWISE coadds. Since
+                                                           launching in February 2017, over 100,000 citizen scientists have contributed to our total
+                                                           of more than 4 million classifications. Backyward Worlds now counts 40,000 registered users, and has
+                                                           benefited enormously from the enthusiasm and dedication of our diverse group of volunteers, some of whom
+                                                           have gone on to receive <a href="http://www.npr.org/2017/06/01/530766624/citizen-scientists-comb-images-to-find-an-overexcited-planet">media</a> 
+                                                           <a href="http://www.vocativ.com/417251/citizen-scientists-solar-system-hidden-planet/">recognition</a> 
+                                                           for their participation. Four citizen scientists are co-authors 
+                                                           on the project's first <a href="http://iopscience.iop.org/article/10.3847/2041-8213/aa7200">peer-reviewed publication</a>. </p>
+						</div>
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dl3_hgUw6l8" frameborder="0" allowfullscreen></iframe> <br>
+
+                                                <font size="3">Credit: NASA's Goddard Space Flight Center Conceptual Image Lab/Krystofer D.J. Kim</font>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+                                                                <h4>ameisner@lbl.gov</h4>
+							</header>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
